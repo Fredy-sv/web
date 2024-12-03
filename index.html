@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mi Página Web</title>
+
+    <!-- Vinculación a Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+     <!-- Vinculación ICONOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Vinculación a hojas de estilo personales -->
+    <link rel="stylesheet" href="lib/css/estilo.css">
+</head>
+<body>
+
+<!-- Menú de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+    <div class="container-fluid"> <!-- Cambié container a container-fluid para que ocupe todo el ancho -->
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+            <img src="img/fredy.webp" alt="Logo" height="40">
+        </a>
+        <!-- Botón para dispositivos móviles -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Menú de enlaces -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav"> <!-- Eliminar ml-auto o mr-auto para mantenerlo a la izquierda -->
+                <li class="nav-item active">
+                    <a class="nav-link active" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="madre.html">Madre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="edwin.html">Edwin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Contenido principal -->
+<main>
+    <div class="container text-center mt-4">
+        <h1>Bienvenido</h1>
+        <br>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <img src="img/edwin.avif" class="card-img-top" alt="Edwin">
+                    <div class="card-body">
+                        <h5 class="card-title">EDWIN</h5>
+                        <p class="card-text">Cuenta de pagos de luz e internet</p>
+                        <button onclick="window.location.href='edwin.html'" class="btn btn-primary">Ver cuenta</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <img src="img/madre.avif" class="card-img-top" alt="Madre">
+                    <div class="card-body">
+                        <h5 class="card-title">MADRE</h5>
+                        <p class="card-text">Cuenta de pagos de luz e internet</p>
+                        <button onclick="window.location.href='madre.html'" class="btn btn-primary">Ver cuenta</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <img src="img/edwin.avif" class="card-img-top" alt="Edwin">
+                    <div class="card-body">
+                        <h5 class="card-title">EDWIN</h5>
+                        <p class="card-text">Cuenta de pagos de luz e internet</p>
+                        <button onclick="window.location.href='edwin.html'" class="btn btn-primary">Ver cuenta</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <img src="img/madre.avif" class="card-img-top" alt="Madre">
+                    <div class="card-body">
+                        <h5 class="card-title">MADRE</h5>
+                        <p class="card-text">Cuenta de pagos de luz e internet</p>
+                        <button onclick="window.location.href='madre.html'" class="btn btn-primary">Ver cuenta</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- Sección de información personal -->
+            <div class="col-lg-4">
+                <h5>Información Personal</h5>
+                <p><strong>Desarrollador:</strong> Alfredo Mejía</p>
+                <p><strong>Email:</strong> <a href="mailto:alfredo@example.com">alfredo@example.com</a></p>
+                <p><strong>Teléfono:</strong> +503 7070 7070</p>
+            </div>
+
+            <!-- Sección de redes sociales -->
+            <div class="col-lg-4 text-center">
+                <h5>Sígueme</h5>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sección de mensaje final -->
+            <div class="col-lg-4 text-lg-end">
+                <h5>Acerca de</h5>
+                <p>Desarrollado por Alfredo Mejía.</p>
+                <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- Vinculación a jQuery y Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+/* Estilos del menú */
+.navbar {
+    background-color: #58d68d;
+    transition: background-color 0.3s ease;
+}
+.navbar-brand img {
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+.navbar-brand img:hover {
+    transform: scale(1.1);
+}
+.nav-link {
+    color: #f8f9fa !important;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 15px;
+}
+.nav-link:hover {
+    color: #1b4f72 !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+.nav-item.active .nav-link {
+    font-weight: bold;
+    color: #1b4f72 !important;
+}
+
+/* Tarjetas */
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Estilos responsivos */
+@media (max-width: 576px) {
+    .row-cols-sm-2 .col {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+
+
+/* ESTILO PARA LAS PAGINAS EDWIN Y MADRE */
+
+/* Mueve solo la imagen del menú */
+        .navbar-brand img {
+            margin-left: 15px; /* Mueve la imagen 15px hacia la derecha */
+        }
+
+        /* Hacer que la tabla sea completamente responsiva */
+        .table-responsive {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch; /* Suaviza el desplazamiento en dispositivos móviles */
+        }
+
+        /* Ajustes adicionales para pantallas muy pequeñas */
+        @media (max-width: 576px) {
+            header h1 {
+                font-size: 1.5rem; /* Ajusta el tamaño del título en dispositivos pequeños */
+            }
+            .btn {
+                font-size: 0.9rem; /* Botones más pequeños */
+            }
+            .navbar-nav .nav-link {
+                font-size: 1rem; /* Mantiene el tamaño de las letras del menú legibles */
+            }
+        }
+
+
+
+        /* ESTILO PARA EL PRECIO TFOOT DE LA TABLA */
+
+
+
+tfoot .precioE {
+    color: #229954;
+    font-size: 1.5rem; /* Aumenta el tamaño de fuente (ajusta según sea necesario) */
+    font-weight: bold; /* Opcional, para hacerlo más destacado */
+}
+
+tfoot .text-end {
+    color: #154360;
+    font-size: 1.5rem; /* Aumenta el tamaño de fuente (ajusta según sea necesario) */
+    font-weight: bold; /* Opcional, para hacerlo más destacado */
+}
+
+
+
+
+
+/*ESTILOS PARA EL FOOTER*/
+
+/* Estilo general del footer */
+.footer {
+    background-color: #1e1e2f; /* Fondo moderno: gris oscuro */
+    color: #b0b3b8; /* Texto gris claro */
+    padding: 40px 0;
+    font-size: 0.95rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo de títulos */
+.footer h5 {
+    color: #ffffff; /* Blanco para los títulos */
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+/* Links */
+.footer a {
+    color: #00aaff; /* Azul brillante */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Redes sociales */
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer .social-icon {
+    color: #b0b3b8; /* Iconos en gris claro */
+    font-size: 1.5rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.footer .social-icon:hover {
+    color: #00aaff; /* Cambia a azul brillante al pasar el ratón */
+    transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer .col-lg-4 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer .text-lg-end {
+        text-align: center !important;
+    }
+}
+
+
+/*Para que el footer si no hay mucho contenido siempre este abajo*/
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Se expande para llenar el espacio restante */
+}
